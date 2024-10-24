@@ -32,7 +32,9 @@
     <input type="checkbox"[disabled]="isdisabled">
     <br>
     <!-- <input [value]="isdisabled"> property binding -->
-    <input [value]="isdisabled">
+    <input (keyup)="updatetitle($event)">
+    <br>
+    <button (click)="changetitle()">Click here</button>
     
 
   </mat-card-actions>

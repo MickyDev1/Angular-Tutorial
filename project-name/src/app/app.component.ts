@@ -20,4 +20,12 @@ export class AppComponent {
   _obj={"name":"NT"}
 
   isdisabled=false;
+
+  changetitle(){
+    this.title="Angular 18 full Tutorial"
+  }
+
+  updatetitle(event:any){
+    this.title=event.target.value;
+  }
 }
