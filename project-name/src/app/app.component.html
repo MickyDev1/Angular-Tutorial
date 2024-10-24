@@ -32,7 +32,8 @@
     <input type="checkbox"[disabled]="isdisabled">
     <br>
     <!-- <input [value]="isdisabled"> property binding -->
-    <input (keyup)="updatetitle($event)">
+    <!-- <input (keyup)="updatetitle($event)"> -->
+     <input type="[(ngModel)]"="title">
     <br>
     <button (click)="changetitle()">Click here</button>
     
