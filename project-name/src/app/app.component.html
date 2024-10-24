@@ -1,0 +1,50 @@
+<!-- <h1>Angular</h1> -->
+
+<router-outlet />
+
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title> {{ title }}</mat-card-title>
+    <mat-card-subtitle>{{ subtitle | lowercase }}</mat-card-subtitle>
+
+  </mat-card-header>
+  <mat-card-actions>
+
+    <app-home></app-home>
+    <!-- <span>{{ todaydate | date : "dd /MM/yyyy" }}</span> date pipe, UpperCase and LowerCase pipe -->
+    <span>{{ todaydate | date : "dd /MM/yyyy" }}</span>
+    <br>
+    <!-- <span>{{ salary | currency : "EUR" }}</span> Currency pipe -->
+    <span>{{ salary | currency : "EUR" }}</span>
+    <br>
+    <!-- <span>{{ salary | number : "1.2-2" : "EUR" }}</span> Decimal pipe -->
+    <span>{{ salary | number : "1.2-2" : "EUR" }}</span>
+    <br>
+    <!-- <span>{{salary/100 | percent}}</span>Percentage pipe -->
+    <span>{{salary/100 | percent}}</span>
+    <br>
+    <span>{{subtitle | reverse}}</span>
+    <br>
+    <!-- <span>{{_obj | json}}</span> JsonPipe -->
+    <span>{{_obj | json}}</span>
+    <br>
+    <!-- <input type="checkbox"[disabled]="isdisabled"> property binding -->
+    <input type="checkbox"[disabled]="isdisabled">
+    <br>
+    <!-- <input [value]="isdisabled"> property binding -->
+    <input [value]="isdisabled">
+    
+
+  </mat-card-actions>
+  <mat-card-actions> </mat-card-actions>
+</mat-card>
+<br />
+<!-- <mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>Poodle</mat-card-title>
+    <mat-card-subtitle>Non-sporting group</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-actions align="end">
+    <button mat-button>Learn More</button>
+  </mat-card-actions>
+</mat-card> -->
